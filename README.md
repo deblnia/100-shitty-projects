@@ -5,7 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 TODO: 
 - [ ] Add in projects card component 
 - [ ] Add in projects data 
-- [ ] Add in progress bar 
+- [X] Add in progress bar 
+    - The font size kinda sucks 
 
 - Scripts: 
     - `npm start` to run the app in dev mode 

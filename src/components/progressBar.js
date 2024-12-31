@@ -42,9 +42,8 @@ const textStyle = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   fontSize: '14px',
-  fontWeight: 'bold',
   color: '#fff',
-};
+}
 
 ProgressBar.propTypes = {
   currentProgress: PropTypes.number.isRequired,
