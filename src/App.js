@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import ProgressBar from './components/progressBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> 💩 100 Shitty Projects </h1>
+      <p> I believe that 100 shitty projects started as a extension of <a href='https://www.visakanv.com/blog/do100things/'> @visakanv's "Do 100 Things"</a>. I believe in repetition, so here are mine.</p>
+      <ProgressBar currentProgress={10}/> 
     </div>
   );
 }
