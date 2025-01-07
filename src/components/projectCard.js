@@ -1,22 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-
-const ProjectCard = ({ name, description }) => {
-  const percentage = Math.min(Math.max(currentProgress / 100, 0), 1) * 100;
-
+const ProjectCard = ({ name, description, tools }) => {
   return (
-    <div className="progress-bar-container" style={containerStyle}>
-      <div
-        className="progress-bar-fill"
-        style={{
-          ...fillStyle,
-          width: `${percentage}%`,
-        }}
-      />
-      <span className="progress-bar-text" style={textStyle}>
-        {Math.round(percentage)}%
-      </span>
+    <div className="project-card">
+      <h3>{name} ⬈</h3>
+      <p>{description}</p>
+      {tools && tools.length > 0 && (
+        <div className="project-tags">
+          {tools.map((tool, index) => (
+            <span key={index} className="project-tag">
+              {tool}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
+
+export default ProjectCard;

@@ -1,14 +1,62 @@
-body {
-	margin: 40px auto;
-	max-width: 650px;
-	line-height: 1.6;
-	font-size: 18px;
-	color: #444;
-	padding: 0 10px
-}
+.project-card {
+	/* border: 2px solid black; */
+	padding: 16px;
+	margin: 16px 0;
+	background-color: #fff;
+	color: #000;
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+  }
+  
+  .project-card h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0 0 8px;
+  }
 
-h1,
-h2,
-h3 {
-	line-height: 1.2
-}
+  li {
+	font-size: 24px;
+	margin: 0 0 8px;
+  }
+  
+  .project-card p {
+	font-size: 18px;
+	margin: 0;
+  }
+  
+  body {
+	margin: 16px;
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 1.6;
+	background-color: #fff;
+	color: #000;
+	max-width: 650px;
+  }
+  .project-tags {
+	display: flex;
+	flex-wrap: wrap; /* Wrap tags to the next line if they overflow */
+	gap: 8px; /* Spacing between tags */
+	margin-top: 16px; /* Space from the content above */
+  }
+  
+  .project-tag {
+	background-color: #f0f0f0; /* Light gray background */
+	color: #333; /* Dark text */
+	font-size: 14px; /* Smaller font size for tags */
+	padding: 4px 8px; /* Padding for tag size */
+	border-radius: 16px; /* Rounded edges */
+	border: 1px solid #ccc; /* Subtle border */
+	display: inline-block;
+	text-transform: capitalize; /* Optional: Capitalize tag names */
+  }
+  h1 {
+	padding: 2px; 
+	/* border: 1px solid red; */
+	margin-bottom: 2px;
+  }
+  .intro {
+	/* border: 1px solid red;  */
+	margin-top: 1px;
+  }
